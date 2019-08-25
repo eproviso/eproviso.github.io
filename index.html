@@ -71,16 +71,19 @@ var myVar;
 function myFunction() {
   myVar = setTimeout(showPage, 1500);
 }
+  
 var data = new Date();
-var hora    = data.getHours();
-alert(hora);
-console.log(hora);
+var hora = data.getHours();
 function showPage() {
   document.getElementById("loader").style.display = "none";
   //document.getElementById("myDiv").style.display = "block";
   
-  //if(intHours!=00){  }
-  //window.location.replace("http://eproviso.000webhostapp.com/index.html");
+  if(hora!=00){
+    window.location.replace("http://williansmarianos.000webhostapp.com/eproviso.html");
+  }else{
+    window.location.replace("eproviso.github.io/horaerrada.html");
+  }
+  
 }
 </script>
 
