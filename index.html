@@ -71,11 +71,14 @@ var myVar;
 function myFunction() {
   myVar = setTimeout(showPage, 1500);
 }
-
+var intHours;
 function showPage() {
   document.getElementById("loader").style.display = "none";
   //document.getElementById("myDiv").style.display = "block";
-  window.location.replace("http://eproviso.000webhostapp.com/index.html");
+  intHours = today.getHours();
+  alert(intHours);
+  //if(intHours!=00){  }
+  //window.location.replace("http://eproviso.000webhostapp.com/index.html");
 }
 </script>
 
